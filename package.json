@@ -5,24 +5,23 @@
   "main": "dist/index.js",
   "scripts": {
     "clean": "rimraf dist/*",
-    "build": "npm run lint && npm run test && npm run clean && tsc",
+    "build": "npm run lint && npm run clean && tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint --project tsconfig.json",
-    "dev": "tsc-watch --onSuccess \"npm start\" | pino-pretty",
+    "dev": "tsc-watch",
     "test": "jest --env=jsdom",
-    "clearTestCache": "jest --clearCache",
-    "start": "node scripts/start.js"
+    "clearTestCache": "jest --clearCache"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lukemnet/react-twitch-ext-onauthorized.git"
   },
   "keywords": [
-    "battlenet",
-    "bnet",
-    "authentication",
-    "api",
-    "backend"
+    "react",
+    "twitch",
+    "extension",
+    "authorization",
+    "onauthorized"
   ],
   "author": "Łukasz Wójcik",
   "license": "MIT",
@@ -54,7 +53,7 @@
     "typescript": "3.5.3"
   },
   "dependencies": {
-    "@types/jsdom": "^12.2.4",
+    "@types/jsdom": "12.2.4",
     "react": "16.9.0"
   },
   "jest": {

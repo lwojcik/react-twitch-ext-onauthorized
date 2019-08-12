@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`TwitchAuthProvider should render child element inside a Twitch Extension context when no props are passed 1`] = `
-<div>
-  Unauthorized
-</div>
-`;
