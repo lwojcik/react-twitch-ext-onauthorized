@@ -1,0 +1,65 @@
+{
+  "name": "react-twitch-ext-onauthorized",
+  "version": "0.0.1",
+  "description": "React HOC handling Twitch Extension Helper authorization",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "build": "npm run lint && npm run test && npm run clean && tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint --project tsconfig.json",
+    "dev": "tsc-watch --onSuccess \"npm start\" | pino-pretty",
+    "test": "jest --env=jsdom",
+    "clearTestCache": "jest --clearCache",
+    "start": "node scripts/start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukemnet/react-twitch-ext-onauthorized.git"
+  },
+  "keywords": [
+    "battlenet",
+    "bnet",
+    "authentication",
+    "api",
+    "backend"
+  ],
+  "author": "Łukasz Wójcik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukemnet/react-twitch-ext-onauthorized/issues"
+  },
+  "homepage": "https://github.com/lukemnet/react-twitch-ext-onauthorized#readme",
+  "devDependencies": {
+    "@types/jest": "24.0.17",
+    "@types/node": "12.7.1",
+    "@types/react": "16.9.1",
+    "@types/react-dom": "16.8.5",
+    "@types/react-test-renderer": "16.9.0",
+    "babel-jest": "24.8.0",
+    "jest": "24.8.0",
+    "jsdom": "15.1.1",
+    "prettier": "1.18.2",
+    "react-dom": "16.9.0",
+    "react-test-renderer": "16.9.0",
+    "rimraf": "2.6.3",
+    "ts-jest": "24.0.2",
+    "tsc-watch": "2.4.0",
+    "tslint": "5.18.0",
+    "tslint-config-airbnb": "5.11.1",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-eslint-rules": "5.4.0",
+    "tslint-immutable": "6.0.1",
+    "tslint-plugin-prettier": "2.0.1",
+    "typescript": "3.5.3"
+  },
+  "dependencies": {
+    "@types/jsdom": "^12.2.4",
+    "react": "16.9.0"
+  },
+  "jest": {
+    "globals": {
+      "window": {}
+    }
+  }
+}
