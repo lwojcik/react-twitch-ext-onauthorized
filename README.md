@@ -1,10 +1,12 @@
 # react-twitch-ext-onauthorized
 
-React Higher Order Component performing authorization with Twitch Extension Helper. It passes `auth` object.
+React Higher Order Component performing authorization with Twitch Extensions JavaScript Helper. It calls [`twitch.ext.onauthorized`](https://dev.twitch.tv/docs/extensions/reference/#onauthorized) and passes received authorization object to a child component as a render prop.
+
+While [`onauthorized` is not the only method offered by The Extensions JavaScript Helper](https://dev.twitch.tv/docs/extensions/reference/#helper-extensions), it is definitely  the most essential building block of each Twitch Extension.
 
 # Requirements
 
-* React v16.8 or newer (aka any version supporting [React Hooks](https://reactjs.org/docs/hooks-intro.html))
+* React v16.8 or newer (any version supporting [React Hooks](https://reactjs.org/docs/hooks-intro.html))
 
 # Install
 
@@ -26,6 +28,14 @@ const Unauthorized = <div>This will be used if authorization fails</div>;
 </TwitchAuthProvider>
 
 ```
+
+Note that you still have to provide Twitch JavaScript Helper yourself at ``window.Twitch.ext``.
+
+# Props
+
+* `enable` - (default: `true`) enables or disables authorization. When set to `false`, component will not attempt to obtain authorization from JavaScript Helper. You can set `enable` to `false` for development or testing purposes.
+* `unauthorized` (default: `<div>Unauthorized</div>`) - element to render if Twitch authorization fails (e.g. the extension is open outside of Twitch context)
+* `children` (child component) - element which is supposed to be rendered with authorization object received from JavaScript Helper.
 
 ## License
 
