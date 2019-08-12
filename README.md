@@ -1,5 +1,10 @@
 # react-twitch-ext-onauthorized
 
+[![Travis Build Status](https://travis-ci.org/lukemnet/react-twitch-ext-onauthorized.svg?branch=master)](https://travis-ci.org/lukemnet/react-twitch-ext-onauthorized)
+[![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/45oqe7ui0tojdbxn/branch/master?svg=true)](https://ci.appveyor.com/project/lwojcik/react-twitch-ext-onauthorized/branch/master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/96c28dcc8a308d1d756c/maintainability)](https://codeclimate.com/github/lukemnet/react-twitch-ext-onauthorized/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/96c28dcc8a308d1d756c/test_coverage)](https://codeclimate.com/github/lukemnet/react-twitch-ext-onauthorized/test_coverage)
+
 React Higher Order Component performing authorization with Twitch Extensions JavaScript Helper. It calls [`twitch.ext.onauthorized`](https://dev.twitch.tv/docs/extensions/reference/#onauthorized) and passes received authorization object to a child component as a render prop.
 
 While [`onauthorized` is not the only method offered by The Extensions JavaScript Helper](https://dev.twitch.tv/docs/extensions/reference/#helper-extensions), it is definitely  the most essential building block of each Twitch Extension.
