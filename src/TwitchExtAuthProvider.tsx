@@ -28,33 +28,35 @@ interface TwitchContext extends Window {
   }
 }
 
-const TwitchAuthProvider = (props: TwitchAuthProviderProps) => {
+const getTwitchExtensionContext = (enable: Boolean, callback: CallableFunction) => {
+  if (enable) {
+    const twitchContext = window as TwitchContext;
+    const itsTwitch = !!(twitchContext.Twitch && twitchContext.Twitch.ext);
+    if (itsTwitch) {
+      twitchContext.Twitch.ext.onAuthorized((twitchAuth: TwitchAuthResponse) => {
+        callback({ authorized: true, ...twitchAuth })
+      });
+    }
+  } else {
+    callback({
+      authorized: true,
+      channelId: 'disabled',
+      clientId: 'disabled',
+      token: 'disabled',
+      userId: 'disabled',
+    });
+  }
+}
+
+const TwitchExtAuthProvider = (props: TwitchAuthProviderProps) => {
   const enable = (typeof props.enable !== 'undefined') ? props.enable : true;
   const unauthorized = props.unauthorized || <div>Unauthorized</div>;
   const [auth, setAuth] = useState({ authorized: false, channelId: '', token: '', clientId: '', userId: '' });
 
   useEffect(() => {
-    const getTwitchExtensionContext = (callback: CallableFunction) => {
-      if (enable) {
-        const twitchContext = window as TwitchContext;
-        const itsTwitch = !!(twitchContext.Twitch && twitchContext.Twitch.ext);
-        if (itsTwitch) {
-          twitchContext.Twitch.ext.onAuthorized((twitchAuth: TwitchAuthResponse) => {
-            callback({ authorized: true, ...twitchAuth })
-          });
-        }
-      } else {
-        callback({
-          authorized: true,
-          channelId: 'disabled',
-          clientId: 'disabled',
-          token: 'disabled',
-          userId: 'disabled',
-        });
-      }
-    }
+    
 
-    getTwitchExtensionContext((twitchAuthObject: TwitchAuthObject) => {
+    getTwitchExtensionContext(enable, (twitchAuthObject: TwitchAuthObject) => {
       setAuth(twitchAuthObject);
     });
   }, [enable]);
@@ -64,4 +66,4 @@ const TwitchAuthProvider = (props: TwitchAuthProviderProps) => {
     : unauthorized;
 }
 
-export default TwitchAuthProvider;
+export default TwitchExtAuthProvider;
