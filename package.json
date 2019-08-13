@@ -1,6 +1,6 @@
 {
   "name": "react-twitch-ext-onauthorized",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "React Higher Order Component handling authorization with Twitch Extension Helper",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
