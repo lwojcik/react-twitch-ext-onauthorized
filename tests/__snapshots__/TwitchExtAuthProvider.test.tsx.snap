@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TwitchAuthProvider should render as unauthorized outside of a Twitch Extension context 1`] = `
+<TwitchAuthProvider>
+  <div>
+    Unauthorized
+  </div>
+</TwitchAuthProvider>
+`;
+
+exports[`TwitchAuthProvider should render child element inside a Twitch Extension context when disabled 1`] = `
+<TwitchAuthProvider
+  enable={false}
+>
+  <TestElement
+    authorized={true}
+    channelId="disabled"
+    clientId="disabled"
+    token="disabled"
+    userId="disabled"
+  >
+    <div>
+      TestElement 
+      {"authorized":true,"channelId":"disabled","clientId":"disabled","token":"disabled","userId":"disabled"}
+    </div>
+  </TestElement>
+</TwitchAuthProvider>
+`;
+
+exports[`TwitchAuthProvider should render child element inside a Twitch Extension context when no props are passed 1`] = `
+<TwitchAuthProvider>
+  <TestElement
+    authorized={true}
+    channelId="test_channel_id"
+    clientId="test_client_id"
+    token="test_token"
+    userId="test_user_id"
+  >
+    <div>
+      TestElement 
+      {"authorized":true,"channelId":"test_channel_id","token":"test_token","clientId":"test_client_id","userId":"test_user_id"}
+    </div>
+  </TestElement>
+</TwitchAuthProvider>
+`;
+
+exports[`TwitchAuthProvider should render custom unauthorized element if passed as a prop outside of a Twitch Extension context 1`] = `
+<TwitchAuthProvider
+  unauthorized={<UnauthorizedTestElement />}
+>
+  <UnauthorizedTestElement>
+    <div>
+      UnauthorizedTestElement
+    </div>
+  </UnauthorizedTestElement>
+</TwitchAuthProvider>
+`;

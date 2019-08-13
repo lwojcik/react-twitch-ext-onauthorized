@@ -22,15 +22,15 @@ npm install --save react-twitch-ext-onauthorized
 # Example
 
 ```javascript
-import TwitchAuthProvider from 'react-twitch-ext-onauthorized';
+import TwitchExtAuthProvider from 'react-twitch-ext-onauthorized';
 
 const MyComponent = <div>My component<div>;
 
 const Unauthorized = <div>This will be used if authorization fails</div>;
 
- <TwitchAuthProvider enable={true} unauthorized={<Unauthorized />}>
+ <TwitchExtAuthProvider enable={true} unauthorized={<Unauthorized />}>
   {(twitchAuth) => <MyComponent />}
-</TwitchAuthProvider>
+</TwitchExtAuthProvider>
 
 ```
 
@@ -40,7 +40,7 @@ Note that you still have to provide Twitch JavaScript Helper yourself at ``windo
 
 * `enable` - (default: `true`) enables or disables authorization. When set to `false`, component will not attempt to obtain authorization from JavaScript Helper. You can set `enable` to `false` for development or testing purposes.
 * `unauthorized` (default: `<div>Unauthorized</div>`) - element to render if Twitch authorization fails (e.g. the extension is open outside of Twitch context)
-* `children` (child component) - element which is supposed to be rendered with authorization object received from JavaScript Helper.
+* `children` (child component) - element which is supposed to be rendered with authorization object as prop received from Twitch JavaScript Helper.
 
 ## License
 
