@@ -1,6 +1,3 @@
 import useTwitchAuth, { TwitchAuthObject } from './useTwitchAuth';
-
-export {
-  TwitchAuthObject,
-  useTwitchAuth,
-};
+export { TwitchAuthObject };
+export default useTwitchAuth;
