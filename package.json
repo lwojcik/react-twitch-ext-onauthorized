@@ -1,7 +1,7 @@
 {
   "name": "react-twitch-ext-onauthorized",
   "version": "1.0.0",
-  "description": "Custom React hook handling authorization with Twitch Extensions JavaScript Helper",
+  "description": "React hook handling authorization with Twitch Extensions JavaScript Helper",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

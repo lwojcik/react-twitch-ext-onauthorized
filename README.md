@@ -6,7 +6,7 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/96c28dcc8a308d1d756c/test_coverage)](https://codeclimate.com/github/lukemnet/react-twitch-ext-onauthorized/test_coverage)
 [![Greenkeeper badge](https://badges.greenkeeper.io/lukemnet/react-twitch-ext-onauthorized.svg)](https://greenkeeper.io/)
 
-React custom hook performing authorization with Twitch Extensions JavaScript Helper. It calls [`twitch.ext.onauthorized`](https://dev.twitch.tv/docs/extensions/reference/#onauthorized) and returns authorization object.
+React hook performing authorization with Twitch Extensions JavaScript Helper. It calls [`twitch.ext.onauthorized`](https://dev.twitch.tv/docs/extensions/reference/#onauthorized) and returns authorization object.
 
 While [`onauthorized` is not the only method offered by The Extensions JavaScript Helper](https://dev.twitch.tv/docs/extensions/reference/#helper-extensions), it is one of the most important building blocks of each Twitch Extension.
 
