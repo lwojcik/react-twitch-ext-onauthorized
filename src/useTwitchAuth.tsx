@@ -12,11 +12,8 @@ export interface TwitchAuthObject extends TwitchAuthResponse {
 }
 
 interface TwitchContext extends Window {
-  [key: string]: unknown;
   Twitch: {
-    [key:string]: unknown;
     ext: {
-      [key:string]: unknown;
       onAuthorized: (callback: CallableFunction) => void;
     }
   }
