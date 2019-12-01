@@ -33,7 +33,7 @@ const useTwitchAuth = () => {
 
   useEffect(() => {
     const twitchContext = (window as Window) as TwitchContext;
-    const itsTwitch = twitchContext.Twitch && twitchContext.Twitch.ext;
+    const itsTwitch = twitchContext.Twitch?.ext;
     if (itsTwitch) {
       twitchContext.Twitch.ext.onAuthorized((twitchAuth: TwitchAuthResponse) => {
         setTwitchAuth({ authorized: true, ...twitchAuth })
