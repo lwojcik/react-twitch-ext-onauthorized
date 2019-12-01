@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useTwitchAuth should return Twitch authorization object when authorization passes 1`] = `
+<div>
+  <div>
+    TestElement 
+    {"authorized":true,"channelId":"test_channel_id","token":"test_token","clientId":"test_client_id","userId":"test_user_id"}
+  </div>
+</div>
+`;
+
+exports[`useTwitchAuth should return object with empty values outside of a Twitch Extension context 1`] = `
+<div>
+  <div>
+    TestElement 
+    {"authorized":false,"channelId":"","clientId":"","token":"","userId":""}
+  </div>
+</div>
+`;

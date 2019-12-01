@@ -1,3 +1,6 @@
-import TwitchExtAuthProvider from './TwitchExtAuthProvider';
-export { TwitchAuthObject } from './TwitchExtAuthProvider';
-export default TwitchExtAuthProvider;
+import useTwitchAuth, { TwitchAuthObject } from './useTwitchAuth';
+
+export {
+  TwitchAuthObject,
+  useTwitchAuth,
+};
