@@ -1,7 +1,6 @@
 node_modules/
 src/
 tests/
-setupEnzyme.ts
 jest.config.js
 package-lock.json
 tsconfig.json
