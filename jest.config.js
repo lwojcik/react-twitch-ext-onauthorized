@@ -24,8 +24,6 @@ module.exports = {
     "!**/dist/**",
   ],
   "automock": false,
-  "snapshotSerializers": ["enzyme-to-json/serializer"],
-  "setupFilesAfterEnv": [ "<rootDir>/setupEnzyme.ts" ],
   // "coverageThreshold": {
   //   "global": {
   //     "branches": 100,
