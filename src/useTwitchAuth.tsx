@@ -36,7 +36,7 @@ const useTwitchAuth = () => {
         setTwitchAuth({ authorized: true, ...twitchAuth })
       });
     }
-  }, []);
+  }, [ window ]);
 
   return twitchAuth;
 }
