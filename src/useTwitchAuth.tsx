@@ -15,8 +15,8 @@ interface TwitchContext extends Window {
   Twitch: {
     ext: {
       onAuthorized: (callback: CallableFunction) => void;
-    }
-  }
+    };
+  };
 }
 
 const useTwitchAuth = () => {
@@ -28,17 +28,19 @@ const useTwitchAuth = () => {
     userId: '',
   });
 
-  useEffect(() => {
-    const twitchContext = (window as Window) as TwitchContext;
-    const itsTwitch = twitchContext.Twitch?.ext;
-    if (itsTwitch) {
-      twitchContext.Twitch.ext.onAuthorized((twitchAuth: TwitchAuthResponse) => {
-        setTwitchAuth({ authorized: true, ...twitchAuth })
-      });
-    }
-  }, [ window ]);
+  useEffect(
+    () => {
+      const twitchContext = (window as Window) as TwitchContext;
+      const itsTwitch = twitchContext.Twitch?.ext;
+      if (itsTwitch) {
+        twitchContext.Twitch.ext.onAuthorized((twitchAuth: TwitchAuthResponse) => {
+          setTwitchAuth({ authorized: true, ...twitchAuth });
+        });
+      }
+    },
+    [window]);
 
   return twitchAuth;
-}
+};
 
 export default useTwitchAuth;
