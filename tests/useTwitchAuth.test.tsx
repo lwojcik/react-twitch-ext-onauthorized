@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from "@testing-library/react";
+import { render } from '@testing-library/react';
 import useTwitchAuth from '../src/useTwitchAuth';
 
 const TestElement = () => {
@@ -7,7 +7,7 @@ const TestElement = () => {
   return (
     <div>TestElement {JSON.stringify(twitchAuth)}</div>
   );
-}
+};
 
 // const UnauthorizedTestElement = () => <div>UnauthorizedTestElement</div>;
 
@@ -23,16 +23,16 @@ const mockTwitchExtensionContext = () => {
             clientId: 'test_client_id',
             userId: 'test_user_id',
           });
-      }),
+        }),
       },
     },
     writable: true,
   });
-}
+};
 
 const resetTwitchExtensionContext = () => {
   (window as any).Twitch = null;
-}
+};
 
 describe('useTwitchAuth', () => {
   it('should return Twitch authorization object when authorization passes', () => {
@@ -41,10 +41,9 @@ describe('useTwitchAuth', () => {
     expect(container).toMatchSnapshot();
   });
 
-
   it('should return object with empty values outside of a Twitch Extension context', () => {
     resetTwitchExtensionContext();
-    
+
     const { container } = render(<TestElement />);
 
     expect(container).toMatchSnapshot();
