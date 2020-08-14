@@ -8,3 +8,4 @@ tslint.json
 coverage/
 .travis.yml
 appveyor.yml
+.mergify.yml
