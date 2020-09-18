@@ -10,13 +10,13 @@ React hook performing authorization with Twitch Extensions JavaScript Helper. It
 
 While [`onAuthorized` is not the only method offered by The Extensions JavaScript Helper](https://dev.twitch.tv/docs/extensions/reference/#helper-extensions), it is one of the most important building blocks of each Twitch Extension.
 
-# Install
+## Install
 
 ```
 npm install --save react-twitch-ext-onauthorized
 ```
 
-# Usage
+## Usage
 
 Example:
 
@@ -57,7 +57,7 @@ When loaded outside of Twitch context, ``twitchAuth`` properties contain empty s
 
 Note that you still have to provide Twitch JavaScript Helper yourself so that ``window.Twitch.ext`` resolves correctly -- see [Twitch docs on adding the Extension Helper](https://dev.twitch.tv/docs/extensions/building/#extension-helper-library).
 
-# TypeScript
+## TypeScript
 
 `react-twitch-ext-onauthorized` exposes two interfaces which can be used for type checking: `TwitchAuthResponse` and `TwitchAuthObject`.
 
@@ -72,7 +72,7 @@ import { TwitchAuthObject } from 'react-twitch-ext-onauthorized';
 
 ```
 
-## `TwitchAuthResponse`
+### `TwitchAuthResponse`
 
 Represents the shape of authorization object received from Twitch.
 
@@ -85,7 +85,7 @@ interface TwitchAuthResponse {
 }
 ```
 
-## `TwitchAuthObject`
+### `TwitchAuthObject`
 
 Contains Twitch authorization object (`TwitchAuthResponse`) and a property `authorized` which denotes whether authorization was successful:
 
