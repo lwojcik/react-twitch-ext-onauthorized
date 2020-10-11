@@ -1,6 +1,6 @@
 # Contributing
 
-Fastify-twitch-ebs-tools is as an open source project. Contributions of any kind are welcome.
+React-twitch-ext-onauthorized is as an open source project. Contributions of any kind are welcome.
 
 You can contribute to the project in many ways:
 
@@ -10,7 +10,7 @@ You can contribute to the project in many ways:
 
 ## Bug reports
 
-If you encounter unexpected behavior, design flaw or any other kind of error that needs to be fixed, feel free to file a bug report in [Issues section on GitHub](https://github.com/lukemnet/fastify-twitch-ebs-tools/issues).
+If you encounter unexpected behavior, design flaw or any other kind of error that needs to be fixed, feel free to file a bug report in [Issues section on GitHub](https://github.com/lukemnet/react-twitch-ext-onauthorized/issues).
 
 There is no specific format you have to follow while filing your report. However, it's highly advisable you include at least some of following information:
 
@@ -28,13 +28,13 @@ There is no specific format you have to follow while filling your request. Just 
 
 ## Documentation improvements
 
-Documentation in Fastify-twitch-ebs-tools exists primarily within a README.md contained in the project repository.
+Documentation in React-twitch-ext-onauthorized exists primarily within a README.md contained in the project repository.
 
 Feel free to submit any relevant fixes regardless of how trivial they may seem.
 
 ## Pull requests
 
-Code patches that add features or fix bugs can be sent as [pull requests on GitHub](https://github.com/lukemnet/fastify-twitch-ebs-tools/pulls).
+Code patches that add features or fix bugs can be sent as [pull requests on GitHub](https://github.com/lukemnet/react-twitch-ext-onauthorized/pulls).
 
 To make the process of merging your pull request as quick as possible, be sure to read and follow the guidelines below:
 
@@ -48,15 +48,15 @@ To make the process of merging your pull request as quick as possible, be sure t
 
 * Pull requests are merged to `master` branch via squash-and-merge strategy. There are no specific requirements about quality and quantity of commits within feature branches.
 
-* Feel free to add yourself to [AUTHORS](https://github.com/lukemnet/fastify-twitch-ebs-tools/blob/master/AUTHORS) file if you haven't done so.
+* Feel free to add yourself to [AUTHORS](https://github.com/lukemnet/react-twitch-ext-onauthorized/blob/master/AUTHORS) file if you haven't done so.
 
 ## Technical information
 
-This section intends to explain how the project works from the developer's point of view. If you have any questions that weren't answered here, feel free to [submit an issue on GitHub](https://github.com/lukemnet/fastify-twitch-ebs-tools/issues).
+This section intends to explain how the project works from the developer's point of view. If you have any questions that weren't answered here, feel free to [submit an issue on GitHub](https://github.com/lukemnet/react-twitch-ext-onauthorized/issues).
 
 ### Development
 
-Fastify-twitch-ebs-tools is written in TypeScript and compiles to ES5 with `tsc` command. To run the project in development mode, use `npm run dev` or `tsc -w`.
+React-twitch-ext-onauthorized is written in TypeScript and compiles to ES5 with `tsc` command. To run the project in development mode, use `npm run dev` or `tsc -w`.
 
 Full project build, including linting and testing, can be triggered with `npm run build`. To trigger a build without linting and testing use `tsc`.
 
@@ -64,7 +64,7 @@ Type definitions are storted in `types.ts` file. Storing them in a separate file
 
 ### Code conventions / linting
 
-Fastify-twitch-ebs-tools uses [Airbnb style guide](https://github.com/airbnb/javascript) as a base for linting.
+React-twitch-ext-onauthorized uses [Airbnb style guide](https://github.com/airbnb/javascript) as a base for linting.
 
 Internal project code is intended to follow basic principles of functional programming. Non-functional constructs, such as `TwitchEbsTools` class, are occasionally used for user interface.
 
@@ -72,7 +72,7 @@ Linting is a part of build process. Unresolved lint errors fail the build. Howev
 
 ### Testing
 
-For automated unit testing, Fastify-twitch-ebs-tools uses [Jest](https://jestjs.io/). All code related to testing is contained in `tests` folder which mimicks the structure of `src` directory. Names of test files follow the following pattern: `nameOfRelevantSourceFile.test.ts`.
+For automated unit testing, React-twitch-ext-onauthorized uses [Jest](https://jestjs.io/). All code related to testing is contained in `tests` folder which mimicks the structure of `src` directory. Names of test files follow the following pattern: `nameOfRelevantSourceFile.test.ts`.
 
 Testing is done via:
 
@@ -86,10 +86,10 @@ It's possible to create new snapshots in test assertions with help of [`toMatchS
 
 If a code change modifies one or more existing snapshots or makes any of the existing snapshots obsolete, snapshot changes have to be reviewed and accepted manually before proceeding. Accepting snapshot changes is done by running `npm test -- -u`. Resulting changes must be committed to Git.
 
-Each run of `npm test` command generates human-readable coverage report which can be accessed locally in a web browser by opening `/path/to/fastify-twitch-ebs-tools/coverage/lcov-report/index.html`. Those reports often provide hints on how to fill coverage gaps.
+Each run of `npm test` command generates human-readable coverage report which can be accessed locally in a web browser by opening `/path/to/react-twitch-ext-onauthorized/coverage/lcov-report/index.html`. Those reports often provide hints on how to fill coverage gaps.
 
 Note that automated unit tests are powerful tool for quick quality control, but they don't replace the need for integration testing against real-life contexts. In other words, be sure to test your changes in a real life scenario. :)
 
 ### Releases
 
-Whenever possible, Fastify-twitch-ebs-tools follows [semantic versioning](https://semver.org/) for all releases available in [Releases section on GitHub](https://github.com/lukemnet/fastify-twitch-ebs-tools/releases) and on [NPM package manager](https://www.npmjs.com/package/fastify-twitch-ebs-tools). The project is considered production-ready and it doesn't follow any specific release schedule.
+Whenever possible, React-twitch-ext-onauthorized follows [semantic versioning](https://semver.org/) for all releases available in [Releases section on GitHub](https://github.com/lukemnet/react-twitch-ext-onauthorized/releases) and on [NPM package manager](https://www.npmjs.com/package/react-twitch-ext-onauthorized). The project is considered production-ready and it doesn't follow any specific release schedule.
