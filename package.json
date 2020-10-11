@@ -5,13 +5,13 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "clean": "rimraf dist/*",
-    "build": "npm run lint && npm test && npm run clean && tsc",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
-    "lint": "tslint --project tsconfig.json",
-    "dev": "tsc-watch",
     "test": "jest",
     "clearTestCache": "jest --clearCache",
+    "clean": "rimraf dist/*",
+    "dev": "tsc -w",
+    "compile": "tsc --project tsconfig.json",
+    "build": "npm run lint && npm run test && npm run clean && npm run compile",
+    "lint": "eslint . --ext .ts",
     "prepublishOnly": "npm run build"
   },
   "repository": {
@@ -33,24 +33,30 @@
     "url": "https://github.com/lukemnet/react-twitch-ext-onauthorized/issues"
   },
   "homepage": "https://github.com/lukemnet/react-twitch-ext-onauthorized#readme",
+  "dependencies": {
+    "react": "^16.13.1"
+  },
   "devDependencies": {
     "@testing-library/react": "^11.0.4",
     "@types/jest": "^26.0.14",
-    "@types/node": "^14.11.1",
-    "@types/react": "^16.9.49",
+    "@types/node": "^14.11.8",
+    "@types/react": "^16.9.51",
     "@types/react-dom": "^16.9.8",
     "@types/react-test-renderer": "^16.9.3",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
     "babel-jest": "^26.3.0",
-    "jest": "^26.4.2",
-    "react": "^16.13.1",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-typescript": "^11.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.4",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "jest": "^26.5.2",
     "react-dom": "^16.13.1",
     "rimraf": "^3.0.2",
-    "ts-jest": "^26.3.0",
-    "tsc-watch": "^4.2.9",
-    "tslint": "^6.1.3",
-    "tslint-config-airbnb": "^5.11.2",
-    "tslint-eslint-rules": "^5.4.0",
-    "tslint-immutable": "^6.0.1",
-    "typescript": "^4.0.2"
+    "ts-jest": "^26.4.1",
+    "typescript": "^4.0.3"
   }
 }

@@ -14,13 +14,10 @@
     "jsx": "react",
     "lib": [ "es2015", "dom" ]
   },
-  "files": [
-    "src/index.ts"
-  ],
   "exclude": [
     "node_modules",
     "dist",
     "**/tests/*.test.ts",
-    "**/tests/*.test.tsx",
+    "**/tests/*.test.tsx"
   ]
 }
