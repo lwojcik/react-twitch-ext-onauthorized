@@ -4,8 +4,13 @@ tests/
 jest.config.js
 package-lock.json
 tsconfig.json
+tsconfig.eslint.json
 tslint.json
 coverage/
 .travis.yml
-appveyor.yml
 .mergify.yml
+AUTHORS
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+.eslintrc
+.eslintignore

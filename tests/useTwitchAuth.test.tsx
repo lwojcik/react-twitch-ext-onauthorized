@@ -9,8 +9,6 @@ const TestElement = () => {
   );
 };
 
-// const UnauthorizedTestElement = () => <div>UnauthorizedTestElement</div>;
-
 const mockTwitchExtensionContext = () => {
   Object.defineProperty(window, 'Twitch', {
     value: {
@@ -39,13 +37,11 @@ describe('useTwitchAuth', () => {
     mockTwitchExtensionContext();
     const { container } = render(<TestElement />);
     expect(container).toMatchSnapshot();
+    resetTwitchExtensionContext();
   });
 
   it('should return object with empty values outside of a Twitch Extension context', () => {
-    resetTwitchExtensionContext();
-
     const { container } = render(<TestElement />);
-
     expect(container).toMatchSnapshot();
   });
 });
