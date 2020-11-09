@@ -1,7 +1,7 @@
 # react-twitch-ext-onauthorized
 
 [![npm (latest)](https://img.shields.io/npm/v/react-twitch-ext-onauthorized/latest.svg)](https://www.npmjs.com/package/react-twitch-ext-onauthorized)
-[![Travis Build Status](https://travis-ci.org/lukemnet/react-twitch-ext-onauthorized.svg?branch=master)](https://travis-ci.org/lukemnet/react-twitch-ext-onauthorized)
+[![Travis Build Status](https://travis-ci.com/lukemnet/react-twitch-ext-onauthorized.svg?branch=master)](https://travis-ci.com/lukemnet/react-twitch-ext-onauthorized)
 [![Maintainability](https://api.codeclimate.com/v1/badges/96c28dcc8a308d1d756c/maintainability)](https://codeclimate.com/github/lukemnet/react-twitch-ext-onauthorized/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/96c28dcc8a308d1d756c/test_coverage)](https://codeclimate.com/github/lukemnet/react-twitch-ext-onauthorized/test_coverage)
 
