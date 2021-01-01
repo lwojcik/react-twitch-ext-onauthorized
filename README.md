@@ -1,10 +1,8 @@
 # react-twitch-ext-onauthorized
 
 [![npm (latest)](https://img.shields.io/npm/v/react-twitch-ext-onauthorized/latest.svg)](https://www.npmjs.com/package/react-twitch-ext-onauthorized)
-[![Travis Build Status](https://travis-ci.com/lukemnet/react-twitch-ext-onauthorized.svg?branch=master)](https://travis-ci.com/lukemnet/react-twitch-ext-onauthorized)
-[![Maintainability](https://api.codeclimate.com/v1/badges/96c28dcc8a308d1d756c/maintainability)](https://codeclimate.com/github/lukemnet/react-twitch-ext-onauthorized/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/96c28dcc8a308d1d756c/test_coverage)](https://codeclimate.com/github/lukemnet/react-twitch-ext-onauthorized/test_coverage)
-
+[![Build status](https://ci.appveyor.com/api/projects/status/xs9v1pid41j812i0/branch/master?svg=true)](https://ci.appveyor.com/project/lwojcik/react-twitch-ext-onauthorized/branch/master)
+[![codecov](https://codecov.io/gh/lukemnet/react-twitch-ext-onauthorized/branch/master/graph/badge.svg?token=4OTcCyXBmB)](https://codecov.io/gh/lukemnet/react-twitch-ext-onauthorized)
 
 React hook performing authorization with Twitch Extensions JavaScript Helper. It calls [`twitch.ext.onAuthorized`](https://dev.twitch.tv/docs/extensions/reference/#onauthorized) and returns authorization object.
 
