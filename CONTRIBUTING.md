@@ -66,7 +66,7 @@ Type definitions are storted in `types.ts` file. Storing them in a separate file
 
 React-twitch-ext-onauthorized uses [Airbnb style guide](https://github.com/airbnb/javascript) as a base for linting.
 
-Internal project code is intended to follow basic principles of functional programming. Non-functional constructs, such as `TwitchEbsTools` class, are occasionally used for user interface.
+Internal project code is intended to follow basic principles of functional programming.
 
 Linting is a part of build process. Unresolved lint errors fail the build. However, in justified situations it's acceptable to [disable selected lint rules with inline comments](https://eslint.org/docs/user-guide/configuring#disabling-rules-with-inline-comments).
 
