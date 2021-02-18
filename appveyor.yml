@@ -14,4 +14,6 @@ install:
 
 build_script:
   - npm run build
-  - npx codecov
+
+test_script:
+- npx codecov
