@@ -1,6 +1,5 @@
-import useTwitchAuth, {
-  TwitchAuthObject, TwitchAuthResponse,
+export {
+  useTwitchAuth,
+  TwitchAuthObject,
+  TwitchAuthResponse,
 } from './useTwitchAuth';
-
-export { TwitchAuthObject, TwitchAuthResponse };
-export default useTwitchAuth;

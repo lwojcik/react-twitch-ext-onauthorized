@@ -19,7 +19,7 @@ interface TwitchContext extends Window {
   };
 }
 
-const useTwitchAuth = () => {
+export const useTwitchAuth = () => {
   const [twitchAuth, setTwitchAuth] = useState({
     authorized: false,
     channelId: '',
@@ -41,5 +41,3 @@ const useTwitchAuth = () => {
 
   return twitchAuth;
 };
-
-export default useTwitchAuth;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import useTwitchAuth from '../src/useTwitchAuth';
+import { useTwitchAuth } from '../src/useTwitchAuth';
 
 const TestElement = () => {
   const twitchAuth = useTwitchAuth();
