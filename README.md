@@ -19,7 +19,7 @@ npm install --save react-twitch-ext-onauthorized
 Example:
 
 ```javascript
-import useTwitchAuth from 'react-twitch-ext-onauthorized';
+import { useTwitchAuth } from 'react-twitch-ext-onauthorized';
 
 const MyElement = () => {
   const twitchAuth = useTwitchAuth();

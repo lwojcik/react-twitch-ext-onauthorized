@@ -3,13 +3,14 @@
   "version": "2.0.3",
   "description": "React hook handling authorization with Twitch Extensions JavaScript Helper",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
     "clearTestCache": "jest --clearCache",
     "clean": "rimraf dist/*",
     "dev": "tsc -w",
-    "compile": "tsc --project tsconfig.json",
+    "compile": "rollup -c",
     "build": "npm run lint && npm run test && npm run clean && npm run compile",
     "lint": "eslint . --ext .ts",
     "prepublishOnly": "npm run build"
@@ -27,36 +28,43 @@
     "authorization",
     "onauthorized"
   ],
-  "author": "Łukasz Wójcik",
+  "author": {
+    "name": "Łukasz Wójcik",
+    "url": "https://www.lukem.net/"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lukemnet/react-twitch-ext-onauthorized/issues"
   },
   "homepage": "https://github.com/lukemnet/react-twitch-ext-onauthorized#readme",
   "dependencies": {
-    "react": "^17.0.1"
+    "react": "^17.0.2"
   },
   "devDependencies": {
-    "@testing-library/react": "^11.2.2",
-    "@types/jest": "^26.0.19",
-    "@types/node": "^14.14.19",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "@types/react-test-renderer": "^17.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.11.1",
-    "@typescript-eslint/parser": "^4.11.1",
-    "babel-jest": "^26.6.3",
-    "eslint": "^7.16.0",
-    "eslint-config-airbnb-typescript": "^12.0.0",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jest": "^24.1.3",
+    "@testing-library/react": "^11.2.7",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.6.1",
+    "@types/react": "^17.0.7",
+    "@types/react-dom": "^17.0.5",
+    "@types/react-test-renderer": "^17.0.1",
+    "@typescript-eslint/eslint-plugin": "^4.25.0",
+    "@typescript-eslint/parser": "^4.25.0",
+    "babel-jest": "^27.0.1",
+    "esbuild": "^0.12.2",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-plugin-import": "^2.23.3",
+    "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react": "^7.23.2",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "jest": "^26.6.3",
-    "react-dom": "^17.0.1",
+    "jest": "^27.0.1",
+    "react-dom": "^17.0.2",
     "rimraf": "^3.0.2",
-    "ts-jest": "^26.4.4",
-    "typescript": "^4.1.3"
+    "rollup": "^2.50.0",
+    "rollup-plugin-dts": "^3.0.2",
+    "rollup-plugin-esbuild": "^4.2.3",
+    "ts-jest": "^27.0.0",
+    "typescript": "^4.2.4"
   }
 }
