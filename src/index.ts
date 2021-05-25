@@ -1,5 +1,1 @@
-export {
-  useTwitchAuth,
-  TwitchAuthObject,
-  TwitchAuthResponse,
-} from './useTwitchAuth';
+export * from './useTwitchAuth';
