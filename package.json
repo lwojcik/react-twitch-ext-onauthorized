@@ -3,7 +3,6 @@
   "version": "3.0.0",
   "description": "React hook handling authorization with Twitch Extensions JavaScript Helper",
   "main": "dist/index.js",
-  "module": "dist/index.mjs",
   "typings": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
