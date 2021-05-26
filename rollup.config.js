@@ -25,13 +25,6 @@ export default [
           react: 'react',
         },
       },
-      {
-        file: `${name}.mjs`,
-        format: 'es',
-        globals: {
-          react: 'react',
-        },
-      },
     ],
     context: 'this',
   }),
