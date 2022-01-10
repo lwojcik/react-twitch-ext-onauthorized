@@ -3,7 +3,6 @@ queue_rules:
     conditions:
       - "status-success=continuous-integration/appveyor/branch"
       - "status-success=continuous-integration/appveyor/pr"
-      - "status-success=security/snyk (lukemnet)"
 
 pull_request_rules:
   - name: Automatic merge of Snyk dependency upgrades (bot)
@@ -12,7 +11,6 @@ pull_request_rules:
       - "-conflict"
       - "status-success=continuous-integration/appveyor/branch"
       - "status-success=continuous-integration/appveyor/pr"
-      - "status-success=security/snyk (lukemnet)"
     actions:
       queue:
         method: squash
@@ -25,7 +23,6 @@ pull_request_rules:
       - "-conflict"
       - "status-success=continuous-integration/appveyor/branch"
       - "status-success=continuous-integration/appveyor/pr"
-      - "status-success=security/snyk (lukemnet)"
     actions:
       queue:
         method: squash
@@ -36,7 +33,6 @@ pull_request_rules:
       - "-conflict"
       - "status-success=continuous-integration/appveyor/branch"
       - "status-success=continuous-integration/appveyor/pr"
-      - "status-success=security/snyk (lukemnet)"
     actions:
       queue:
         method: squash
