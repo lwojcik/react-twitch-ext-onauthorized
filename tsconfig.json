@@ -5,14 +5,14 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,     
+    "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
     "removeComments": true,
     "declaration": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
-    "lib": [ "es2015", "dom" ]
+    "lib": ["es2015", "dom"]
   },
   "exclude": [
     "node_modules",

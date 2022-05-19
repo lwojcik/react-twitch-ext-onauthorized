@@ -19,17 +19,15 @@ npm install --save react-twitch-ext-onauthorized
 Example:
 
 ```javascript
-import { useTwitchAuth } from 'react-twitch-ext-onauthorized';
+import { useTwitchAuth } from "react-twitch-ext-onauthorized";
 
 const MyElement = () => {
   const twitchAuth = useTwitchAuth();
-  return (
-    <div>TestElement {JSON.stringify(twitchAuth)}</div>
-  );
-}
+  return <div>TestElement {JSON.stringify(twitchAuth)}</div>;
+};
 ```
 
-When authorization succeeds, ``twitchAuth`` contains the following properties:
+When authorization succeeds, `twitchAuth` contains the following properties:
 
 ```
 {
@@ -41,7 +39,7 @@ When authorization succeeds, ``twitchAuth`` contains the following properties:
 }
 ```
 
-When loaded outside of Twitch context, ``twitchAuth`` properties contain empty strings and ``authorized`` property will remain ``false``:
+When loaded outside of Twitch context, `twitchAuth` properties contain empty strings and `authorized` property will remain `false`:
 
 ```
 {
@@ -53,7 +51,7 @@ When loaded outside of Twitch context, ``twitchAuth`` properties contain empty s
 }
 ```
 
-Note that you still have to provide Twitch JavaScript Helper yourself so that ``window.Twitch.ext`` resolves correctly -- see [Twitch docs on adding the Extension Helper](https://dev.twitch.tv/docs/extensions/building/#extension-helper-library).
+Note that you still have to provide Twitch JavaScript Helper yourself so that `window.Twitch.ext` resolves correctly -- see [Twitch docs on adding the Extension Helper](https://dev.twitch.tv/docs/extensions/building/#extension-helper-library).
 
 ## TypeScript
 
@@ -62,12 +60,11 @@ Note that you still have to provide Twitch JavaScript Helper yourself so that ``
 To import them into your project add
 
 ```typescript
-import { TwitchAuthResponse } from 'react-twitch-ext-onauthorized';
+import { TwitchAuthResponse } from "react-twitch-ext-onauthorized";
 
 // OR
 
-import { TwitchAuthObject } from 'react-twitch-ext-onauthorized';
-
+import { TwitchAuthObject } from "react-twitch-ext-onauthorized";
 ```
 
 ### `TwitchAuthResponse`
@@ -103,9 +100,9 @@ Contributions of any kind are welcome.
 
 You can contribute to React-twitch-ext-onauthorized by:
 
-* submiting bug reports or feature suggestions
-* improving documentation
-* submitting pull requests
+- submiting bug reports or feature suggestions
+- improving documentation
+- submitting pull requests
 
 Before contributing be sure to read [Contributing Guidelines](https://github.com/lukemnet/react-twitch-ext-onauthorized/blob/master/CONTRIBUTING.md) and [Code of Conduct](https://github.com/lukemnet/react-twitch-ext-onauthorized/blob/master/CODE_OF_CONDUCT.md).
 
@@ -114,7 +111,6 @@ Before contributing be sure to read [Contributing Guidelines](https://github.com
 To all who contribute code, improve documentation, submit issues or feature requests - thank you for making Twitch-ebs-tools even better!
 
 We maintain an [AUTHORS](https://github.com/lukemnet/react-twitch-ext-onauthorized/blob/master/AUTHORS) file where we keep a list of all project contributors. Please consider adding your name there with your next PR.
-
 
 ## License
 

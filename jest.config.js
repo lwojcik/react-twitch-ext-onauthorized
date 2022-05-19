@@ -1,29 +1,20 @@
 module.exports = {
-  "preset": 'ts-jest',
-  "testEnvironment": 'jsdom',
-  "roots": [
-    "<rootDir>/"
-  ],
-  "transform": {
-    "^.+\\.ts?$": "ts-jest"
+  preset: "ts-jest",
+  testEnvironment: "jsdom",
+  roots: ["<rootDir>/"],
+  transform: {
+    "^.+\\.ts?$": "ts-jest",
   },
-  "moduleFileExtensions": [
-    "ts",
-    "tsx",
-    "js",
-    "jsx",
-    "json",
-    "node"
-  ],
-  "collectCoverage": true,
-  "collectCoverageFrom": [
+  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
+  collectCoverage: true,
+  collectCoverageFrom: [
     "**/src/**/*.{ts,tsx}",
     "!**/**.{d.ts}",
     "!src/**/*.d.ts",
     "!**/node_modules/**",
     "!**/dist/**",
   ],
-  "automock": false,
+  automock: false,
   // "coverageThreshold": {
   //   "global": {
   //     "branches": 100,
@@ -35,4 +26,4 @@ module.exports = {
   // "setupFiles": [
   //   "dotenv/config"
   // ],
-}
+};

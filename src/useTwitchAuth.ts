@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 export interface TwitchAuthResponse {
   channelId: string;
@@ -22,22 +22,23 @@ interface TwitchContext extends Window {
 export const useTwitchAuth = () => {
   const [twitchAuth, setTwitchAuth] = useState({
     authorized: false,
-    channelId: '',
-    clientId: '',
-    token: '',
-    userId: '',
+    channelId: "",
+    clientId: "",
+    token: "",
+    userId: "",
   });
 
   useEffect(() => {
-    const twitchContext = (window as Window) as TwitchContext;
+    const twitchContext = window as Window as TwitchContext;
     const itsTwitch = twitchContext.Twitch?.ext;
     if (itsTwitch) {
-      twitchContext.Twitch.ext.onAuthorized((twitchResponse: TwitchAuthResponse) => {
-        setTwitchAuth({ authorized: true, ...twitchResponse });
-      });
+      twitchContext.Twitch.ext.onAuthorized(
+        (twitchResponse: TwitchAuthResponse) => {
+          setTwitchAuth({ authorized: true, ...twitchResponse });
+        }
+      );
     }
-  },
-  [window]);
+  }, [window]);
 
   return twitchAuth;
 };
