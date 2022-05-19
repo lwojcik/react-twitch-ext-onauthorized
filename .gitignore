@@ -60,3 +60,5 @@ docs/
 .vscode/*
 
 package-lock.json
+
+.eslintcache

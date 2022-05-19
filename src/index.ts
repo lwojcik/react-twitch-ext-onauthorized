@@ -1,1 +1,1 @@
-export * from './useTwitchAuth';
+export * from "./useTwitchAuth";

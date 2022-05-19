@@ -1,7 +1,7 @@
-import { useTwitchAuth } from '../src/index';
+import { useTwitchAuth } from "../src/index";
 
-describe('index', () => {
-  it('should expose useTwitchAuth custom hook', () => {
+describe("index", () => {
+  it("should expose useTwitchAuth custom hook", () => {
     expect(useTwitchAuth).toBeDefined();
   });
 });
