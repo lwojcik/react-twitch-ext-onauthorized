@@ -38,7 +38,7 @@ export const useTwitchAuth = () => {
         }
       );
     }
-  }, [window]);
+  }, []);
 
   return twitchAuth;
 };
