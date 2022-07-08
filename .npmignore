@@ -18,4 +18,4 @@ rollup.config.js
 appveyor.yml
 .husky
 .prettierrc
-.prettiergnore
+.prettierignore
