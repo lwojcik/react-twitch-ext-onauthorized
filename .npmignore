@@ -16,3 +16,6 @@ CONTRIBUTING.md
 .eslintignore
 rollup.config.js
 appveyor.yml
+.husky
+.prettierrc
+.prettierignore
