@@ -2,6 +2,7 @@ import React from "react";
 import { render } from "@testing-library/react";
 import { useTwitchAuth } from "../src/useTwitchAuth";
 
+// eslint-disable-next-line react/function-component-definition
 const TestElement = () => {
   const twitchAuth = useTwitchAuth();
   return <div>TestElement {JSON.stringify(twitchAuth)}</div>;
@@ -11,7 +12,7 @@ const mockTwitchExtensionContext = () => {
   Object.defineProperty(window, "Twitch", {
     value: {
       ext: {
-        onAuthorized: jest.fn().mockImplementation((callback: Function) => {
+        onAuthorized: jest.fn().mockImplementation((callback) => {
           callback({
             authorized: true,
             channelId: "test_channel_id",
@@ -27,6 +28,7 @@ const mockTwitchExtensionContext = () => {
 };
 
 const resetTwitchExtensionContext = () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   (window as any).Twitch = null;
 };
 
