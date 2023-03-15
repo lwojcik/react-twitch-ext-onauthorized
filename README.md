@@ -1,8 +1,6 @@
 # react-twitch-ext-onauthorized
 
-[![npm (latest)](https://img.shields.io/npm/v/react-twitch-ext-onauthorized/latest.svg)](https://www.npmjs.com/package/react-twitch-ext-onauthorized)
-[![Build status](https://ci.appveyor.com/api/projects/status/xs9v1pid41j812i0/branch/master?svg=true)](https://ci.appveyor.com/project/lwojcik/react-twitch-ext-onauthorized/branch/master)
-[![codecov](https://codecov.io/gh/lukemnet/react-twitch-ext-onauthorized/branch/master/graph/badge.svg?token=4OTcCyXBmB)](https://codecov.io/gh/lukemnet/react-twitch-ext-onauthorized)
+> **As of 15 March 2023 this project is no longer updated or maintained.**
 
 React hook performing authorization with Twitch Extensions JavaScript Helper. It calls [`twitch.ext.onAuthorized`](https://dev.twitch.tv/docs/extensions/reference/#onauthorized) and returns authorization object.
 
