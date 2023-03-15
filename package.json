@@ -11,18 +11,18 @@
     "authorization",
     "onauthorized"
   ],
-  "homepage": "https://github.com/lukemnet/react-twitch-ext-onauthorized#readme",
+  "homepage": "https://github.com/lwojcik/react-twitch-ext-onauthorized#readme",
   "bugs": {
-    "url": "https://github.com/lukemnet/react-twitch-ext-onauthorized/issues"
+    "url": "https://github.com/lwojcik/react-twitch-ext-onauthorized/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lukemnet/react-twitch-ext-onauthorized.git"
+    "url": "git+https://github.com/lwojcik/react-twitch-ext-onauthorized.git"
   },
   "license": "MIT",
   "author": {
     "name": "Łukasz Wójcik",
-    "url": "https://www.lukem.net/"
+    "url": "https://lukaszwojcik.net/"
   },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
